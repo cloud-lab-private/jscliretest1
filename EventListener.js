@@ -1,3 +1,4 @@
+
 /**
  * as your site grows in size and complexity, you will most likely need to keep track of many user interactions
  * simultaneously. For instance, when a user moves their mouse or clicks on elements, we may want to not only
@@ -8,16 +9,24 @@
  *
  * https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
  */
+
 let button1 = document.getElementById("button1");
 let button2 = document.getElementById("button2");
+
 let reset = document.getElementById("reset");
+
 let text1 = document.getElementById("text1");
 let text2 = document.getElementById("text2");
 let text3 = document.getElementById("text3");
+
 //set the initial text
 resetText()
+
 //example eventListener
 reset.addEventListener("click", resetText);
+
+
+
 /**
  * TODO: add four new event listeners: when button1 is clicked, both updateTextOnButton1Click and
  * updateTextOnEitherButtonClick should fire. when button2 is clicked, both updateTextOnButton2Click and
@@ -47,6 +56,7 @@ function resetText(){
 function updateTextOnButton1Click(){
     text1.innerText = "button1 clicked";
 }
+
 /**
  * update the text2 element
  * dont change this method
@@ -54,6 +64,7 @@ function updateTextOnButton1Click(){
 function updateTextOnEitherButtonClick(){
     text2.innerText = "either button1 or button2 clicked";
 }
+
 /**
  * update the text3 element
  * dont change this method
@@ -61,3 +72,7 @@ function updateTextOnEitherButtonClick(){
 function updateTextOnButton2Click(){
     text3.innerText = "button2 clicked";
 }
+
+
+/* OPTIONAL PRACTICE: If you want more practice later, try to add events to HTML elements other than buttons. Also, explore
+other events besides the "click" event. */
