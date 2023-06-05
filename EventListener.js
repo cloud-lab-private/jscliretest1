@@ -30,7 +30,7 @@ reset.addEventListener("click", resetText);
 /**
  * TODO: add four new event listeners: when button1 is clicked, both updateTextOnButton1Click and
  * updateTextOnEitherButtonClick should fire. when button2 is clicked, both updateTextOnButton2Click and
- * updateTextOnButton2Click should fire.
+ * updateTextOnEitherButtonClick should fire.
  */
 
 //code here
@@ -54,6 +54,7 @@ function resetText(){
  * dont change this method
  */
 function updateTextOnButton1Click(){
+    console.log()
     text1.innerText = "button1 clicked";
 }
 
