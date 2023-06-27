@@ -18,13 +18,16 @@ public class SeleniumTest {
     @Before
     public void setUp() {
         // Set up ChromeDriver path
-        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
 
         // Create a new ChromeDriver instance
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        driver = new ChromeDriver(options);
         File file = new File("EventListener.html");
+        
         // Open the HTML file
-        driver.get(file.getAbsolutePath());
+        driver.get("file://" + file.getAbsolutePath());
     }
     @Test
     public void testButton1Text1() {
