@@ -1,4 +1,5 @@
 {
-  "type":"javascript",
-  "chromedriverPath":""
+  "projectType":"javascript",
+  "chromedriverPath":"",
+  "vscodeExtensions":[]
 }
