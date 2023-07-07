@@ -1,5 +1,5 @@
 {
   "projectType":"javascript",
   "chromedriverPath":"-d driver",
-  "vscodeExtensions":["streetsidesoftware.code-spell-checker","artisanbytecrafter.poptheme"]
+  "vscodeExtensions":["streetsidesoftware.code-spell-checker","artisanbytecrafter.poptheme","aaron-bond.better-comments"]
 }
